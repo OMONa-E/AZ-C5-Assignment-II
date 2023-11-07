@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML table and list concept</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- using css to style the table -->
+    <style>
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 6px;
+        } 
+        ul {
+            list-style: square;
+        }
+    </style>
+</head>
+<body>
+    <table>
+
+        <!-- This is the table heading formatted in row -->
+        <thead>
+            <th colspan="6">Time Table</th>
+        </thead>
+
+        <!-- This is the table body formatted in rows and columns -->
+        <tbody>
+            <!-- tr represnts table rows and th table columns headings -->
+            <tr>
+                <th rowspan="6">Hours</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+            </tr>
+            <tr>
+                <!-- td represents table columns data -->
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Arts</td>
+            </tr>
+            <tr>
+                <td>Social</td>
+
+                <td>History
+                    <ol type="a">
+                        <strong>
+                            <i>
+                                <code>
+                                   <li>Acient Egypt</li>
+                                    <li>Acient Greek</li>
+                                    <li>Roman Empire</li>   
+                                </code>                              
+                            </i>                            
+                        </strong>                        
+                    </ol>
+                </td>
+
+                <td>English</td>
+                <td>Social</td>
+                <td>Sports</td>
+            </tr>
+            <tr>
+                <th colspan="5">Lunch</th>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Science</td>
+                <td>Maths</td>
+
+                <td rowspan="2">Project
+                    <ul>
+                        <strong>
+                            <i>
+                                <code>
+                                    <li>Self Driving Automobiles</li>
+                                    <li>Floating Experiment</li>
+                                    <li>3D Modelling</li>   
+                                </code>                              
+                            </i>                            
+                        </strong>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Social</td>
+
+                <td>History
+                    <ol type="a">
+                        <strong>
+                            <i>
+                                <code>
+                                   <li>Acient Egypt</li>
+                                    <li>Acient Greek</li>
+                                    <li>Roman Empire</li>   
+                                </code>                              
+                            </i>                            
+                        </strong>                        
+                    </ol>
+                </td>
+
+                <td>English</td>
+                <td>Social</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
